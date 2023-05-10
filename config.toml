@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://kerrance.github.io/owl-of-minerva/'
+languageCode = 'en-gb'
+title = 'Owl of Minerva'
 theme = "geofront"
