@@ -1,4 +1,6 @@
 baseURL = 'https://kerrance.github.io/owl-of-minerva/'
+contentDir = 'content'
 languageCode = 'en-gb'
 title = 'Owl of Minerva'
 theme = "geofront"
+sectionPagesMenu = "main"
