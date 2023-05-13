@@ -3,4 +3,16 @@ contentDir = 'content'
 languageCode = 'en-gb'
 title = 'Owl of Minerva'
 theme = "geofront"
-sectionPagesMenu = "main"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20

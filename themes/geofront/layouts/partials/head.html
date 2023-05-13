@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -5,7 +7,9 @@
     <meta name="theme-color" content="#007f6e">
     <link href="aesthetic.css" rel="stylesheet">
     <link rel="icon" href="data:,">
-    {{ $title := print .Site.Title " | " .Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <title>{{ $title }}</title>
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `
+    <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 </head>

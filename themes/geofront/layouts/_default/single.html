@@ -1,4 +1,7 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
+
 <h1>{{ .Title }}</h1>
+
 {{ .Content }}
-{{ end }}
+
+{{ partial "footer.html" . }}
