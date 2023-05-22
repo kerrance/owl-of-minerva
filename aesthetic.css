@@ -1,0 +1,148 @@
+:root {
+  --color__green: #007f6e;
+  --color__mid-green: #006a5d;
+  --color__yellow: #f2c311;
+  --color__black: #01110f;
+}
+
+html {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--color__black);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--color__black);
+    color: white;
+  }
+}
+
+body {
+  width: 80%;
+  max-width: 900px;
+  padding: 6%;
+}
+
+::selection {
+  background-color: var(--color__yellow);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    color: var(--color__black);
+  }
+}
+
+a:link {
+  color: var(--color__green);
+  text-decoration: underline var(--color__green) 0.1rem;
+  text-underline-offset: 0.1rem;
+}
+
+a:visited {
+  color: var(--color__green);
+}
+
+a:hover {
+  color: var(--color__mid-green);
+  text-decoration: underline var(--color__mid-green) 0.1rem;
+}
+
+a:active {
+  color: var(--color__mid-green);
+  text-decoration: underline var(--color__mid-green) 0.1rem;
+}
+
+a:focus {
+  outline: var(--color__green) auto 1px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li+li:before {
+  content: "/\00a0";
+  color: var(--color__green);
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--color__mid-green);
+}
+
+strong {
+  margin-right: 0.1rem;
+}
+
+h1,
+h2,
+p {
+  margin: 0.6rem 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-decoration: underline var(--color__yellow) 0.2rem;
+  text-underline-offset: 0.2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+}
+
+thead th {
+  text-decoration: underline var(--color__yellow) 0.2rem;
+  text-underline-offset: 0.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+tbody tr td:first-of-type {
+  font-weight: bold;
+  width: 33%;
+  vertical-align: top;
+}
+
+details {
+  margin: 0.6rem 0;
+}
+
+details > summary {
+  padding: 0;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+details > p {
+  padding: 0 0.6rem;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary > * {
+  margin: 0;
+}
