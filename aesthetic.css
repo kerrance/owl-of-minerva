@@ -37,6 +37,13 @@ body {
   }
 }
 
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
 a:link {
   color: var(--color__green);
   text-decoration: underline var(--color__green) 0.1rem;
