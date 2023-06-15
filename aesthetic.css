@@ -2,6 +2,7 @@
   --color__green: #007f6e;
   --color__mid-green: #006a5d;
   --color__yellow: #f2c311;
+  --color__purple: #60289b;
   --color__black: #01110f;
 }
 
@@ -120,6 +121,13 @@ h2 {
 
 h3 {
   font-size: 1rem;
+}
+
+article header {
+  display: block;
+  font-size: 0.8rem;
+  margin: 0.6rem 0;
+  color: var(--color__purple);
 }
 
 table {
